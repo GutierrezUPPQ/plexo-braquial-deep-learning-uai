@@ -1,0 +1,6 @@
+tensorflow>=2.18,<2.21
+keras>=3.8,<4
+numpy>=1.26,<3
+pandas>=2.2,<4
+streamlit>=1.45,<2
+pillow>=10,<13
