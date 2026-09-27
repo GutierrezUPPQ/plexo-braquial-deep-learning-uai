@@ -1,0 +1,64 @@
+{
+  "format": "training_fitted_tabular_preprocessor",
+  "version": 1,
+  "numeric_columns": [
+    "age",
+    "height",
+    "BMI"
+  ],
+  "categorical_columns": [
+    "gender",
+    "left_right",
+    "gain"
+  ],
+  "numeric_statistics": {
+    "age": {
+      "median": 39.0,
+      "mean": 41.08029197080292,
+      "scale": 13.36574682671795,
+      "all_missing_in_train": false
+    },
+    "height": {
+      "median": 171.0,
+      "mean": 170.0,
+      "scale": 6.284031436497633,
+      "all_missing_in_train": false
+    },
+    "BMI": {
+      "median": 25.1,
+      "mean": 25.329927007299272,
+      "scale": 2.5889254587894985,
+      "all_missing_in_train": false
+    }
+  },
+  "categorical_levels": {
+    "gender": [
+      "value:F",
+      "value:M"
+    ],
+    "left_right": [
+      "value:L",
+      "value:R"
+    ],
+    "gain": [
+      "value:H",
+      "value:L",
+      "value:M"
+    ]
+  },
+  "feature_names": [
+    "age",
+    "height",
+    "BMI",
+    "gender=value:F",
+    "gender=value:M",
+    "left_right=value:L",
+    "left_right=value:R",
+    "gain=value:H",
+    "gain=value:L",
+    "gain=value:M"
+  ],
+  "fit_row_count": 822,
+  "unknown_category_policy": "all_zero",
+  "missing_category_token": "__MISSING__"
+}
