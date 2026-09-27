@@ -1,0 +1,78 @@
+{
+  "test_metrics": [
+    {
+      "modelo": "image_only",
+      "pacientes_positivos": 29,
+      "frames_positivos": 137,
+      "dice_paciente": 0.5744145977287919,
+      "iou_paciente": 0.4482110674425087,
+      "frames_negativos": 43,
+      "pacientes_con_frames_negativos": 13,
+      "negativos_con_prediccion": 16,
+      "area_FP_negativos_media": 0.010229776071947675
+    },
+    {
+      "modelo": "fusion",
+      "pacientes_positivos": 29,
+      "frames_positivos": 137,
+      "dice_paciente": 0.605435002964816,
+      "iou_paciente": 0.4768615496776965,
+      "frames_negativos": 43,
+      "pacientes_con_frames_negativos": 13,
+      "negativos_con_prediccion": 14,
+      "area_FP_negativos_media": 0.008543502452761628
+    }
+  ],
+  "validation_metrics": [
+    {
+      "modelo": "image_only",
+      "pacientes_positivos": 28,
+      "frames_positivos": 149,
+      "dice_paciente": 0.6270083603555437,
+      "iou_paciente": 0.4977619415223127,
+      "frames_negativos": 25,
+      "pacientes_con_frames_negativos": 8,
+      "negativos_con_prediccion": 7,
+      "area_FP_negativos_media": 0.0045849609375
+    },
+    {
+      "modelo": "fusion",
+      "pacientes_positivos": 28,
+      "frames_positivos": 149,
+      "dice_paciente": 0.6326893385118364,
+      "iou_paciente": 0.505853957130712,
+      "frames_negativos": 25,
+      "pacientes_con_frames_negativos": 8,
+      "negativos_con_prediccion": 4,
+      "area_FP_negativos_media": 0.00439208984375
+    }
+  ],
+  "intervals": [
+    {
+      "estimacion": "image_only",
+      "dice_o_diferencia": 0.5744145977287919,
+      "IC95_inferior": 0.4870442139840484,
+      "IC95_superior": 0.6587761846020171,
+      "pacientes": 29,
+      "replicas": 2000
+    },
+    {
+      "estimacion": "fusion",
+      "dice_o_diferencia": 0.605435002964816,
+      "IC95_inferior": 0.5216116298025042,
+      "IC95_superior": 0.6826135591602155,
+      "pacientes": 29,
+      "replicas": 2000
+    },
+    {
+      "estimacion": "fusion - image_only",
+      "dice_o_diferencia": 0.031020405236024118,
+      "IC95_inferior": -0.003848418769927142,
+      "IC95_superior": 0.06812562067053758,
+      "pacientes": 29,
+      "replicas": 2000
+    }
+  ],
+  "conclusion": "Se seleccionó fusion en validación. En test, Dice por paciente positivo fue 0.574 para imagen sola y 0.605 para fusión. Diferencia fusión−imagen: +0.031; IC bootstrap 95% [-0.004, +0.068]. El intervalo incluye cero: este análisis no establece una ventaja clara de la fusión.",
+  "selected_by_validation": "fusion"
+}
